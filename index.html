@@ -12,24 +12,22 @@
     }
     
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       line-height: 1.6;
       color: #333;
     }
     
     header {
-      background-color: #333;
-      color: #fff;
+      background-color: #f8f8f8;
+      color: #444;
       text-align: center;
-      padding: 1rem 0;
-      animation: fadeIn 2s;
+      padding: 2rem 0;
     }
     
     nav {
       display: flex;
       justify-content: center;
       padding: 1rem 0;
-      animation: fadeIn 2s;
     }
     
     nav a {
@@ -49,36 +47,29 @@
       max-width: 900px;
       margin: 0 auto;
       padding: 1rem;
-      animation: fadeIn 2s;
     }
     
     .about-me {
       padding: 2rem 0;
-      animation: fadeIn 2s;
     }
     
     .projects-container {
-      overflow-x: auto; /* Enable horizontal scrolling */
       padding: 2rem 0;
-      animation: fadeIn 2s;
     }
 
     .projects {
-      display: flex; /* Use flexbox to enable horizontal arrangement */
-      gap: 2.5rem; /* Increased spacing between project items */
-      overflow-x: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
       padding: 2rem 0;
-      animation: fadeIn 2s;
     }
 
     .project {
-      flex: 0 0 300px; /* Constant width for project items */
       border: 1px solid #ccc;
       padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 2s;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
     .project:hover {
@@ -87,8 +78,7 @@
     }
 
     .project img {
-      width: 100%;
-      height: auto;
+      max-width: 100%;
       border-radius: 8px;
       margin-bottom: 1rem;
     }
@@ -119,7 +109,6 @@
     
     .contact {
       padding: 2rem 0;
-      animation: fadeIn 2s;
     }
     
     .contact ul {
@@ -144,19 +133,9 @@
     
     footer {
       text-align: center;
-      background-color: #333;
-      color: #fff;
+      background-color: #f8f8f8;
+      color: #444;
       padding: 1rem 0;
-      animation: fadeIn 2s;
-    }
-    
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
     }
   </style>
 </head>
@@ -176,7 +155,7 @@
     <section id="about-me" class="about-me">
       <h2>About Me</h2>
       <p>
-        I am Ong Chang Le, a 20-year-old computer science student studying at Monash University Malaysia. I enjoy playing basketball and Chinese chess, and I'm passionate about developing fun applications and exploring exciting projects to work on.
+        I am Ong Chang Le, a computer science student with a passion for development and exploration.
       </p>
     </section>
     
@@ -184,7 +163,7 @@
       <h2>Projects</h2>
       <div class="projects">
         <div class="project">
-          <img src="https://www.animaker.com/hub/wp-content/uploads/2023/03/Mickey_Mouse_Disney_1.webp" alt="Project 1">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1">
           <h3>Project Title 1</h3>
           <p>Project Description 1</p>
           <a href="#">Live Demo / GitHub Repo</a>
