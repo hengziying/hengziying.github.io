@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ong Chang Le - Portfolio</title>
+  <style>
+    /* Reset default margin and padding */
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      animation: fadeIn 2s;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      animation: fadeIn 2s;
+    }
+    
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    nav a:hover {
+      color: #555;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+      animation: fadeIn 2s;
+    }
+    
+    .about-me {
+      padding: 2rem 0;
+      animation: fadeIn 2s;
+    }
+    
+    .projects-container {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      padding: 2rem 0;
+      animation: fadeIn 2s;
+    }
+
+    .projects {
+      display: flex; /* Use flexbox to enable horizontal arrangement */
+      gap: 2.5rem; /* Increased spacing between project items */
+      overflow-x: auto;
+      padding: 2rem 0;
+      animation: fadeIn 2s;
+    }
+
+    .project {
+      flex: 0 0 300px; /* Constant width for project items */
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project a {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .project a:hover {
+      background-color: #555;
+    }
+    
+    .contact {
+      padding: 2rem 0;
+      animation: fadeIn 2s;
+    }
+    
+    .contact ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    
+    .contact li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .contact li a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .contact li a:hover {
+      color: #555;
+    }
+    
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+      animation: fadeIn 2s;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ong Chang Le</h1>
+    <p>Computer Science Student</p>
+  </header>
+  
+  <nav>
+    <a href="#about-me">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <div class="container">
+    <section id="about-me" class="about-me">
+      <h2>About Me</h2>
+      <p>
+        I am Ong Chang Le, a 20-year-old computer science student studying at Monash University Malaysia. I enjoy playing basketball and Chinese chess, and I'm passionate about developing fun applications and exploring exciting projects to work on.
+      </p>
+    </section>
+    
+    <section id="projects" class="projects-container">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1">
+          <h3>Project Title 1</h3>
+          <p>Project Description 1</p>
+          <a href="#">Live Demo / GitHub Repo</a>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2">
+          <h3>Project Title 2</h3>
+          <p>Project Description 2</p>
+          <a href="#">Live Demo / GitHub Repo</a>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3">
+          <h3>Project Title 3</h3>
+          <p>Project Description 3</p>
+          <a href="#">Live Demo / GitHub Repo</a>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/300x200" alt="Project 4">
+          <h3>Project Title 4</h3>
+          <p>Project Description 4</p>
+          <a href="#">Live Demo / GitHub Repo</a>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+    
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to get in touch with me through the following channels:
+      </p>
+      <ul>
+        <li><a href="mailto:your_email@example.com">ongchangle03@gmail.com</a></li>
+        <!-- Add more contact information as needed -->
+      </ul>
+    </section>
+  </div>
+  
+  <footer>
+    &copy; 2023 Ong Chang Le | Portfolio
+  </footer>
+</body>
+</html>
