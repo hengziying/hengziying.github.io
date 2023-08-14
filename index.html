@@ -58,10 +58,11 @@
     }
 
     .projects {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr); /* Four projects per row */
-      gap: 2rem;
-      padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Revert to original value */
+    grid-template-rows: repeat(4, auto); /* Four projects per column */
+    gap: 2rem;
+    padding: 2rem 0;
     }
 
     .project {
