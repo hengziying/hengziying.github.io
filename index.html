@@ -1,93 +1,207 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heng Zi Ying - Portfolio</title>
   <style>
+    /* Reset default margin and padding */
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+    
     body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
     }
-    .container {
+    
+    header {
+      background-color: #f8f8f8;
+      color: #444;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    
+    nav {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
+      padding: 1rem 0;
     }
-    .photo {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-      border: 5px solid orange;
-    }
-    .circle1 {
-      width: 350px;
-      height: 350px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .circle2 {
-      width: 400px;
-      height: 400px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .circle3 {
-      width: 450px;
-      height: 450px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .header {
-      font-size: 48px;
-    }
-    .subheader {
-      font-size: 24px;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px;
-      background-color: orange;
-      color: black;
+    
+    nav a {
+      color: #333;
       text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
     }
-    .footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    
+    nav a:hover {
+      color: #555;
     }
-    .icon {
-      width: 30px;
-      height: 30px;
-      margin: 5px;
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    
+    .about-me {
+      padding: 2rem 0;
+    }
+    
+    .projects-container {
+      padding: 2rem 0;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    .project {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project a {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .project a:hover {
+      background-color: #555;
+    }
+    
+    .contact {
+      padding: 2rem 0;
+    }
+    
+    .contact ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    
+    .contact li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .contact li a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .contact li a:hover {
+      color: #555;
+    }
+    
+    footer {
+      text-align: center;
+      background-color: #f8f8f8;
+      color: #444;
+      padding: 1rem 0;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Heng Zi Ying</h1>
+    <p>Computer Science Student</p>
+  </header>
+  
+  <nav>
+    <a href="#about-me">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
   <div class="container">
-    <div class="circle circle1"></div>
-    <div class="circle circle2"></div>
-    <div class="circle circle3"></div>
-    <img src="photo.jpg" alt="Photo" class="photo">
-    <h1 class="header">Hello</h1>
-    <h2 class="subheader">A bit about me</h2>
-    <a href="resume.html" class="button">Resume</a>
-    <a href="projects.html" class="button">Projects</a>
-    <a href="contact.html" class="button">Contact</a>
+    <section id="about-me" class="about-me">
+      <h2>About Me</h2>
+      <p>
+        A motivated and ambitious student pursuing computer science at Monash University Malaysia. With a strong foundation in Python and Java and maintained a 3.8 CGPA in current results, seeking software engineering internship opportunities on November 2023 to February 2024 to apply and expand my technical skills in a practical environment. 
+      </p>
+    </section>
+    
+    <section id="projects" class="projects-container">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Project Title 1</h3>
+          <p>Project Description 1</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Project Title 2</h3>
+          <p>Project Description 2</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Project Title 3</h3>
+          <p>Project Description 3</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Project Title 4</h3>
+          <p>Project Description 4</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+    
+    
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to get in touch with me through the following channels:
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:ziyingheng@gmail.com">ziyingheng@gmail.com</a></li>
+        <li>Phone number: <a href="tel:+60111032737">+601110621186</a></li>
+        <!-- Add more contact information as needed -->
+      </ul>
+    </section>
   </div>
-  <div class="footer">
-    <p>Email me at nicolrider@example.com</p>
-    <a href="#"><img src="facebook.png" alt="Facebook" class="icon"></a>
-    <a href="#"><img src="twitter.png" alt="Twitter" class="icon"></a>
-    <a href="#"><img src="linkedin.png" alt="LinkedIn" class="icon"></a>
-  </div>
+  
+  <footer>
+    &copy; 2023 Heng Zi Ying | Portfolio
+  </footer>
 </body>
 </html>
