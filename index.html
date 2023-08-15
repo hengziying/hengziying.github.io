@@ -71,49 +71,46 @@
 
     }
 
-    .project {
-      border: 1px solid #e2dbd1;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
+   .project {
+    display: flex; /* Add flexbox layout */
+    flex-direction: column; /* Arrange elements vertically within the project container */
+    border: 1px solid #e2dbd1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
 
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 
+  .project h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
 
-    .project img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
+  .project p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 
-    .project h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
+  .project a {
+    margin-top: auto; /* Push the button to the bottom */
+    align-self: flex-end; /* Align the button to the right side */
+    display: inline-block;
+    background-color: #baab93;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
 
-    .project p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .project a {
-      display: inline-block;
-      background-color: #e2dbd1;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    .project a:hover {
-      background-color: #555;
-    }
+  .project a:hover {
+    background-color: #555;
+  }
     
     .contact {
       padding: 2rem 0;
