@@ -86,7 +86,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Projects</title>
+        <title>ZY Portfolio | Projects</title>
         <meta name="description" content="any description"></meta>
       </Head>
       <TransitionEffect />

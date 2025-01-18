@@ -13,7 +13,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>About Me</title>
+        <title>ZY Portfolio | About Me</title>
         <meta name="description" content="any description"></meta>
       </Head>
       <TransitionEffect />

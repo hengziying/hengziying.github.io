@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>ZY Portfolio | Contact</title>
         <meta name="description" content="any description"></meta>
       </Head>
       <TransitionEffect />
