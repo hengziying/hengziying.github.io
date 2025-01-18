@@ -30,8 +30,8 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium leading-7">
-                Hi, I'm Heng Zi Ying, a recent Computer Science graduate from
-                Monash University (November 2024), with a CGPA of 3.8. I am
+                Hi, It&apos;sm Heng Zi Ying, a recent Computer Science graduate
+                from Monash University (November 2024), with a CGPA of 3.8. I am
                 passionate about software development.Throughout my studies, I
                 have been building strong foundation in computing such as
                 building applications, designing databases, and implementing
